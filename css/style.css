@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container{
+    width: 80vw;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: #444;
+    margin: 50px auto;
+
+    border-left: 5px solid rgb(140, 206, 96);
+}
+
+.form{
+    min-width: 400px;
+    flex: 1;
+    order: 2;
+    text-align: center;
+    padding: 30px;
+}
+
+.form__input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid rgb(140, 206, 96);
+    background-color: transparent;
+    color: #fff;
+}
+
+.form__input:focus{
+    background-color: #333;
+    border-bottom: 3px solid rgb(94, 148, 59);
+    outline: none;
+    color: #fff;
+}
+
+.form textarea{
+    min-height: 140px;
+    resize: none;
+    
+}
+
+.form__button-container{
+    margin: 7px;
+}
+
+.form__button{
+    padding: 5px;
+    background-color: rgba(82, 90, 95, 0.692);
+    border: none;
+    border-bottom: 2px solid rgb(165, 238, 70);
+    color: #fff;
+}
+
+.form__button:hover{
+    font-size: 15.6px;
+    background-color: #333;
+    border-bottom: 2px solid rgb(102, 139, 54);
+}
+
+.form-img{
+    flex: 1;
+    order: 1;
+    padding: 10px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.form-img img{
+    width: 60%;
+}
+
+.flaticon{
+    text-decoration: none;
+    color: #333;
+}
+
+.vini{
+    margin-top: 10px;
+}
+
+.flaticon:hover{
+    border-bottom: 3px solid rgb(130, 223, 179);
+}
+
+
+@media only screen and (max-width: 500px) {
+    .form{
+        flex: 0;
+        min-width: 330px;
+    }
+}
